@@ -3,18 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Login Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Overall Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Login Container */
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #8ed56d;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Title */
+        .login-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        /* Login Button */
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-button:hover {
+            background-color: #555;
+        }
+
+        /* Links for "Forgot Password" and "Create Account" */
+        .login-options {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-options a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .login-options a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-    </header>
+    <div class="login-container">
+        <div class="login-title">Login</div>
 
-    <main>
-    </main>
+        <!-- Username Field -->
+        <input type="text" class="input-field" placeholder="Username" required>
 
-    <footer>
-    </footer>
+        <!-- Password Field -->
+        <input type="password" class="input-field" placeholder="Password" required>
+
+        <!-- Login Button -->
+        <button class="login-button">Login</button>
+
+        <!-- Forgot Password and Create Account Options -->
+        <div class="login-options">
+            <a href="#forgot-password">Forgot Password?</a>
+            <a href="#create-account">Create Account</a>
+        </div>
+    </div>
 
 </body>
 </html>
